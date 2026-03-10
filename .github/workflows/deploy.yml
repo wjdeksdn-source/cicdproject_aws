@@ -10,7 +10,7 @@ env:
   BUCKET_NAME: cide-codedeploy-9748
   CODE_DEPLOY_APP_NAME: cicdapp
   DEPLOYMENT_GROUP_NAME: cicdapp_deploy
-  AWS_REGION: ap-northeast-2
+  AWS_REGION: ${{ secrets.AWS_REGION }}
 
 jobs:
   build:
